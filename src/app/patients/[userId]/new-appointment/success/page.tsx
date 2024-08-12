@@ -8,7 +8,7 @@ import React from "react";
 import * as Sentry from "@sentry/nextjs";
 import { getUser } from "@/lib/actions/patient.actions";
 
-export const Success = async ({
+const Success = async ({
   params: { userId },
   searchParams,
 }: SearchParamProps) => {
@@ -19,7 +19,7 @@ export const Success = async ({
   );
   const user = await getUser(userId);
 
-  Sentry.metrics.set("user_view_register", user.name);
+  Sentry.metrics.set("user_view_appointment-success", user.name);
   return (
     <div className="flex h-screen max-h-screen px-[5%]">
       <div className="success-img">

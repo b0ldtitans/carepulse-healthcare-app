@@ -76,7 +76,7 @@ const PasskeyModal = () => {
           <AlertDialogDescription>
             To access the admin dashboard, please enter the passkey. <br />
             <br />
-            for demonstration purpose. Code: '111111'
+            for demonstration purpose. Code: &apos;111111&apos;
           </AlertDialogDescription>
         </AlertDialogHeader>
         <div>
